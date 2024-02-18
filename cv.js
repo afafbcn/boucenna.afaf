@@ -37,7 +37,7 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 };
 var swiper = new Swiper(".testimonial-box",{
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     pagination: {
