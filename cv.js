@@ -36,19 +36,21 @@ window.onscroll = () =>{
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
-var swiper = new Swiper(".testimonial-box",{
+var swiper = new Swiper(".testimonial-box", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-})
+    
+});
 
 const form = document.querySelector('form');
 function sendEmail(){
@@ -78,6 +80,6 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img,  .education-row, .contact form, .skills-row, .testimonial-slide', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img,  .education-row, .contact form, .skills-row, testimonial-wrapper', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content  h1 span, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content  .btn-box, .about-content', { origin: 'right' });
